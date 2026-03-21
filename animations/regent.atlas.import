@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://1tbkes3udi4l"
+path="res://.godot/imported/regent.atlas-c49fb830a92301bce34359e365ffde82.spatlas"
+
+[deps]
+
+source_file="res://animations/regent.atlas"
+dest_files=["res://.godot/imported/regent.atlas-c49fb830a92301bce34359e365ffde82.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"
