@@ -4,10 +4,10 @@
 
 Merchant2Cute.pck
 
-animations\merchant_1.atlas
-animations\merchant_1.atlas.import
-animations\merchant_1.png
-animations\merchant_1.png.import
-animations\merchant_1.skel
-animations\merchant_1.skel.import
-animations\merchant_l.tres
+animations/merchant_1.atlas
+animations/merchant_1.atlas.import
+animations/merchant_1.png
+animations/merchant_1.png.import
+animations/merchant_1.skel
+animations/merchant_1.skel.import
+animations/merchant_l.tres
