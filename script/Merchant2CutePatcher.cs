@@ -32,7 +32,7 @@ public static class Merchant2CutePatcher
 				// _Ready 使用新skeldata
 				merchantVisual.Set("skeleton_data_res", Variant.From(raw));
 				/**
-					注意spine要满足：
+					注意spine要保证存在:
 					Animation:idle_loop
 					skin:default,outline
 					（理论上可以自己设置，原动画默认如上）
