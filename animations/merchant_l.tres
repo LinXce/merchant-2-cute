@@ -1,8 +1,8 @@
-[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://dgfn1vhmivjmd"]
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://coakmhclldy18"]
 
-[ext_resource type="SpineAtlasResource" uid="uid://cyoibsqmyt2w5" path="res://animations/characterselect_defect.atlas" id="1_80yrd"]
-[ext_resource type="SpineSkeletonFileResource" uid="uid://sh6vx3318yt0" path="res://animations/characterselect_defect.skel" id="1_ejk8b"]
+[ext_resource type="SpineAtlasResource" uid="uid://cnmbyoy5eggjy" path="res://animations/shop_merchant_top.atlas" id="1_1p7x0"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://cqujw5gto3dn5" path="res://animations/shop_merchant_top.skel" id="2_mgyjt"]
 
 [resource]
-atlas_res = ExtResource("1_80yrd")
-skeleton_file_res = ExtResource("1_ejk8b")
+atlas_res = ExtResource("1_1p7x0")
+skeleton_file_res = ExtResource("2_mgyjt")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drbpfynhg5e7e"
-path="res://.godot/imported/regent.png-6a41d4817b9edf6dcd7fdb55e1907097.ctex"
+uid="uid://bb3p13pdkbson"
+path="res://.godot/imported/shop_merchant_top.png-fad3cc81a3637c540e810fa51e33cc9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animations/regent.png"
-dest_files=["res://.godot/imported/regent.png-6a41d4817b9edf6dcd7fdb55e1907097.ctex"]
+source_file="res://animations/shop_merchant_top.png"
+dest_files=["res://.godot/imported/shop_merchant_top.png-fad3cc81a3637c540e810fa51e33cc9d.ctex"]
 
 [params]
 
