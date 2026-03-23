@@ -1,8 +1,6 @@
 using Godot;
 using HarmonyLib;
-using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
-
 namespace Merchant2Cute.script;
 
 [HarmonyPatch(typeof(NMerchantButton), "_Ready")]
@@ -31,6 +29,9 @@ public static class Merchant2CutePatcher
 			{
 				// _Ready 使用新skeldata
 				merchantVisual.Set("skeleton_data_res", Variant.From(raw));
+				var currentPos = merchantVisual.Get("position").AsVector2();
+				merchantVisual.Set("position", currentPos + new Vector2(1280, 540));
+				merchantVisual.Set("scale", new Vector2((float)0.72, (float)0.72));
 				/**
 					注意spine要保证存在:
 					Animation:idle_loop
