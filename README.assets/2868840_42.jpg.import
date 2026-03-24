@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpl45xj0ig2bl"
-path="res://.godot/imported/merchanthand.png-fe74eed8eb39dc991a3fb03eb3054160.ctex"
+uid="uid://dshgshluu1uvk"
+path="res://.godot/imported/2868840_42.jpg-d7dd73d39b09df9b98edf85509e5b5a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animations/backgrounds/merchant_room/hand/merchanthand.png"
-dest_files=["res://.godot/imported/merchanthand.png-fe74eed8eb39dc991a3fb03eb3054160.ctex"]
+source_file="res://README.assets/2868840_42.jpg"
+dest_files=["res://.godot/imported/2868840_42.jpg-d7dd73d39b09df9b98edf85509e5b5a0.ctex"]
 
 [params]
 
