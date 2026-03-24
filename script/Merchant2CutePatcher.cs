@@ -69,7 +69,7 @@ public static class NMerchantHandScalePatcher
 			{
 				// var currentPos = parent.Get("position").AsVector2();
 				// parent.Set("position", currentPos + new Vector2(0, 200));
-				parent.Set("scale", new Vector2(0.5f, 0.5f));
+				parent.Set("scale", new Vector2(0.4f, 0.4f));
 				GD.Print("[Merchant2Cute] Set scale on NMerchantHand's parent");
 			}
 		}
@@ -93,7 +93,7 @@ public static class NMerchantHandPointAtTargetPatcher
 			if (value != null)
 			{
 				var currentTarget = (Vector2)value;
-				targetPosField.SetValue(__instance, currentTarget + new Vector2(0, 300f));
+				targetPosField.SetValue(__instance, currentTarget + new Vector2(0, 100f));
 				GD.Print("[Merchant2Cute] Adjusted y-axis in PointAtTarget");
 			}
 		}
