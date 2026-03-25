@@ -93,7 +93,7 @@ public static class NMerchantHandPointAtTargetPatcher
 			if (value != null)
 			{
 				var currentTarget = (Vector2)value;
-				targetPosField.SetValue(__instance, currentTarget + new Vector2(0, 100f));
+				targetPosField.SetValue(__instance, currentTarget + new Vector2(0, 10f));
 				GD.Print("[Merchant2Cute] Adjusted y-axis in PointAtTarget");
 			}
 		}
