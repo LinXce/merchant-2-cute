@@ -9,6 +9,12 @@
 1. 下载 [Releases](https://github.com/LinXce/merchant-2-cute/releases) 的 [Merchant2Cute.zip](https://github.com/LinXce/merchant-2-cute/releases/download/v1.0.1/Merchant2Cute.zip) 解压到杀戮尖塔2游戏目录下的mods文件夹。
 2. 如果没有mods文件夹可以手动创建。
 
+## v1.0.3
+
+更新了污浊药水的特殊效果，会腐蚀小部分衣物。
+（动画效果有点差请见谅）
+之后会考虑换个画风
+
 ## v1.0.2
 
 添加了手机端适配，不再需要dll文件，但未进行有效测试。

@@ -1,11 +1,13 @@
 using Godot;
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Screens.Shops;
+using System;
 namespace Merchant2Cute.script;
 
 [HarmonyPatch(typeof(NMerchantButton), "_Ready")]
-public static class Merchant2CutePatcher
+public static class LMerchant2CutePatcher
 {
 	private const string LMerchantTopSpinePath = "res://animations/merchant_l.tres";
 
@@ -56,7 +58,7 @@ public static class Merchant2CutePatcher
 }
 
 [HarmonyPatch(typeof(NMerchantHand), "_Ready")]
-public static class NMerchantHandScalePatcher
+public static class LMerchantHandScalePatcher
 {
 	[HarmonyPostfix]
 	public static void OnNMerchantHandReady(NMerchantHand __instance)
@@ -81,7 +83,7 @@ public static class NMerchantHandScalePatcher
 }
 
 [HarmonyPatch(typeof(NMerchantHand), "PointAtTarget")]
-public static class NMerchantHandPointAtTargetPatcher
+public static class LMerchantHandPointAtTargetPatcher
 {
 	[HarmonyPostfix]
 	public static void OnPointAtTarget(NMerchantHand __instance, Vector2 pos)
@@ -100,6 +102,36 @@ public static class NMerchantHandPointAtTargetPatcher
 		catch (System.Exception ex)
 		{
 			GD.PrintErr($"[Merchant2Cute] Error adjusting PointAtTarget: {ex.Message}");
+		}
+	}
+}
+
+[HarmonyPatch(typeof(NMerchantRoom), "FoulPotionThrown")]
+public static class LMerchantFoulPotion
+{
+	[HarmonyPostfix]
+	public static void OnFoulPotionThrown(NMerchantRoom __instance)
+	{
+		try
+		{
+			var merchantVisual = __instance.GetNodeOrNull("%MerchantVisual");
+			if (merchantVisual != null)
+			{
+				// 使用 MegaSprite API
+				var megaSprite = new MegaSprite(merchantVisual);
+				megaSprite.GetAnimationState().SetAnimation("poison");
+				// test:
+				// merchantVisual.Set("scale", new Vector2(1.72f, 1.72f)); 
+				GD.Print("[Merchant2Cute] Set animation to poison");
+			}
+			else
+			{
+				GD.PrintErr("[Merchant2Cute] Cannot set animation in poison");
+			}
+		}
+		catch (System.Exception ex)
+		{
+			GD.PrintErr($"[Merchant2Cute] Error adjusting FoulPotionThrown: {ex.Message}");
 		}
 	}
 }
