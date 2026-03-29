@@ -9,6 +9,10 @@
 1. 下载 [Releases](https://github.com/LinXce/merchant-2-cute/releases) 的 [Merchant2Cute.zip](https://github.com/LinXce/merchant-2-cute/releases/download/v1.0.1/Merchant2Cute.zip) 解压到杀戮尖塔2游戏目录下的mods文件夹。
 2. 如果没有mods文件夹可以手动创建。
 
+## v1.0.2
+
+添加了手机端适配，不再需要dll文件，但未进行有效测试。
+
 ## v1.0.1
 
 - 修改了商人的动画以及手部纹理
@@ -24,4 +28,3 @@
 ### 关于手部替换
 
 当然我是指根据网友的意见说的足部版本，有点不太想把图片贴到readme（把几张脚的图片贴在这有点太怪了），总之有需求的自行下载看效果吧。
-
