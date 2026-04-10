@@ -110,7 +110,10 @@ public static class LMerchantHandScalePatcher
 public static class LMerchantHandPointAtTargetPatcher
 {
 	[HarmonyPostfix]
-	public static void OnPointAtTarget(NMerchantHand __instance, Vector2 pos)
+	public static void OnPointAtTarget(
+		NMerchantHand __instance, 
+		Godot.Control target,
+		Godot.Vector2 offset)
 	{
 		if (!MerchantState.IsRealMerchant) return;
 
@@ -120,9 +123,8 @@ public static class LMerchantHandPointAtTargetPatcher
 			var value = targetPosField.GetValue(__instance);
 			if (value != null)
 			{
-				var currentTarget = (Vector2)value;
+				var currentTarget = (Godot.Vector2)value;
 				targetPosField.SetValue(__instance, currentTarget + ModConfig.PointAtTargetOffset);
-				// GD.Print($"[Merchant2Cute] Adjusted position in PointAtTarget by: {ModConfig.PointAtTargetOffset}");
 			}
 		}
 		catch (System.Exception ex)
