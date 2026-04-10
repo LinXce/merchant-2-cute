@@ -19,7 +19,7 @@ public static class ModConfig
 
 	// 指向目标偏移
 	public const float POINT_AT_TARGET_OFFSET_X = 0f;
-	public const float POINT_AT_TARGET_OFFSET_Y = 10f;
+	public const float POINT_AT_TARGET_OFFSET_Y = 0f;
 
 	// Spine动画路径
 	public const string SPINE_ANIMATION_PATH = "res://animations/merchant_l.tres";

@@ -109,28 +109,16 @@ public static class LMerchantHandScalePatcher
 [HarmonyPatch(typeof(NMerchantHand), "PointAtTarget")]
 public static class LMerchantHandPointAtTargetPatcher
 {
-	[HarmonyPostfix]
+	[HarmonyPrefix]
 	public static void OnPointAtTarget(
-		NMerchantHand __instance, 
-		Godot.Control target,
-		Godot.Vector2 offset)
+		NMerchantHand __instance,
+		Control target,
+		ref Vector2 offset)
 	{
 		if (!MerchantState.IsRealMerchant) return;
 
-		try
-		{
-			var targetPosField = AccessTools.Field(typeof(NMerchantHand), "_targetPos");
-			var value = targetPosField.GetValue(__instance);
-			if (value != null)
-			{
-				var currentTarget = (Godot.Vector2)value;
-				targetPosField.SetValue(__instance, currentTarget + ModConfig.PointAtTargetOffset);
-			}
-		}
-		catch (System.Exception ex)
-		{
-			GD.PrintErr($"[Merchant2Cute] Error adjusting PointAtTarget: {ex.Message}");
-		}
+		// 应用配置的偏移量
+		offset += ModConfig.PointAtTargetOffset;
 	}
 }
 
