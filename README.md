@@ -8,7 +8,7 @@
 
 1. 下载 [Releases](https://github.com/LinXce/merchant-2-cute/releases) 的Merchant2Cute压缩包 解压到杀戮尖塔2游戏目录下的mods文件夹。
 2. 如果没有mods文件夹可以手动创建。
-3. 请注意使用正确的版本，杀戮尖塔2的正式版本和beta版本不一样，如果图方便直接下载pe版本（没有dll文件，pc和pe都能用）
+3. 请注意使用正确的版本，杀戮尖塔2的正式版本和beta版本不一样，如果图方便直接下载pe版本（没有dll文件，pc和pe都能用，但是腐蚀特效没有实现）
 
 ## v1.0.3-beta
 
